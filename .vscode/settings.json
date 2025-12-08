@@ -1,0 +1,43 @@
+{
+    "java.project.sourcePaths": [
+        "webapps/tpAuthentification/WEB-INF/classes"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/postgresql-42.7.8.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-es.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-jdbc.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-util.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/catalina-tribes.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-util-scan.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-ja.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-ru.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/jasper.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-de.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-zh-CN.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-ko.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-jni.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/catalina-ssi.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-api.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/jasper-el.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/catalina-ant.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/catalina-ha.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-coyote-ffm.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-pt-BR.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/annotations-api.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-coyote.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/websocket-api.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/catalina.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-cs.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-websocket.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/jaspic-api.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/servlet-api.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/jakartaee-migration-1.0.9-shaded.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-fr.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/el-api.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-dbcp.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/catalina-storeconfig.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/jsp-api.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/websocket-client-api.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/ecj-4.37.jar"
+    ]
+}
