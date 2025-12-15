@@ -32,7 +32,7 @@ public class Authent extends HttpServlet {
 
         try (Connection con = DriverManager.getConnection(url, nom, pwd);
             PreparedStatement pstmt = con.prepareStatement(
-            "SELECT * FROM personne WHERE username = ? AND password = ?;")
+            "SELECT * FROM personne WHERE pseudo = ? AND password = MD5(?);") //MD5 pour le hashage du mp
         ) {
             pstmt.setString(1, login);
             pstmt.setString(2, psw);

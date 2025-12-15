@@ -20,21 +20,24 @@ public class CreatAccount extends HttpServlet {
 
         String login = request.getParameter("login");
         String psw = request.getParameter("mdp");
-
+        String question = request.getParameter("QuestionMagique");
+        String rep = request.getParameter("reponse");
+        
         PrintWriter out = response.getWriter();
 
         try (Connection con = DriverManager.getConnection(url, nom, pwd);
                 PreparedStatement pstmt = con.prepareStatement(
-                        "Insert into personne (username, password, role) values ( ?, ?,'util')")) {
+                        "Insert into personne (pseudo, password, question, reponse, role) values ( ?, MD5(?), ?, ?,'util')")) {
             pstmt.setString(1, login);
             pstmt.setString(2, psw);
+            pstmt.setString(3, question);
+            pstmt.setString(4, rep);
 
             try {
                 pstmt.executeUpdate();
             } catch (Exception e) {
                 out.println("<!doctype html>");
                 out.println("<head><title>servlet Authent Failed</title></head><body><center> ");
-                out.println("<h1>" + e.getLocalizedMessage() + "</h1>");
                 out.println("<h1>" + e.getLocalizedMessage() + "</h1>");
                 out.println("</body></html> ");
             }

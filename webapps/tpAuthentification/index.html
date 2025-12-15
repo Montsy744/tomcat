@@ -20,18 +20,20 @@
                         <div class="flip-card__inner">
                             <div class="flip-card__front">
                                 <div class="title">Log in</div>
-                                <!--Action Authent pour lancer la servlet Authent.java-->
                                 <form action="Authent" class="flip-card__form">
                                     <input class="flip-card__input" name="login" placeholder="Login" type="text">
                                     <input class="flip-card__input" name="mdp" placeholder="Password" type="password">
+                                    <a class="flip-card__liens" href="Question_Magique"> mot de passe oublié ?</a>
                                     <button class="flip-card__btn">Let`s go!</button>
                                 </form>
                             </div>
                             <div class="flip-card__back">
                                 <div class="title">Sign up</div>
-                                <form action="Creat-Account" class="flip-card__form" >
-                                    <input class="flip-card__input" name="login" placeholder="Login" type="text">
+                                <form action="Creat-Account" class="flip-card__form">
+                                    <input class="flip-card__input" name="login" placeholder="Sign up" type="text">
                                     <input class="flip-card__input" name="mdp" placeholder="Password" type="password">
+                                    <input class="flip-card__input" name="QuestionMagique" placeholder="Votre question magique" type="text">
+                                    <input class="flip-card__input" name="reponse" placeholder="La reponse" type="text">
                                     <button class="flip-card__btn">Confirm!</button>
                                 </form>
                             </div>
