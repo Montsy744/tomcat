@@ -1,15 +1,16 @@
 {
     "java.project.sourcePaths": [
-        "webapps/tpAuthentification/WEB-INF/classes"
+        "webapps/tpAuthentification/WEB-INF/classes",
+        "webapps/ctp/WEB-INF/classes"
     ],
     "java.project.referencedLibraries": [
-        "lib/postgresql-42.7.8.jar",
         "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-es.jar",
         "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-jdbc.jar",
-        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-util.jar",
         "/home/infoetu/hugo.straseele.etu/tomcat/lib/catalina-tribes.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-util.jar",
         "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-util-scan.jar",
         "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-ja.jar",
+        "/home/infoetu/hugo.straseele.etu/tomcat/lib/postgresql-42.7.8.jar",
         "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-ru.jar",
         "/home/infoetu/hugo.straseele.etu/tomcat/lib/jasper.jar",
         "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-de.jar",
