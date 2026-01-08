@@ -16,6 +16,7 @@ public class Authen extends HttpServlet {
 	out.println("<head><meta charset='utf-8'><meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport' content='width=device-width, initial-scale=1'>");
 	
 		/* Titre de la page HTML */
+		
 	out.println("<title>Page de login</title>");
 		/* **************** */
 	
@@ -31,7 +32,7 @@ public class Authen extends HttpServlet {
 	    Class.forName("org.postgresql.Driver");
 	    
 	    // connexion a la base
-	    con = DriverManager.getConnection("jdbc:postgresql://localhost/template1?allowMultiQueries=true","mathieu","moi");
+	    con = DriverManager.getConnection("jdbc:postgresql://localhost/template1?allowMultiQueries=true","husostraseeleetu","moi");
 	    
 	    // execution de la requete
 	    Statement stmt = con.createStatement();
