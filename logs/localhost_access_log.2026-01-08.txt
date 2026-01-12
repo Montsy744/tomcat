@@ -4,3 +4,14 @@
 127.0.0.1 - - [08/Jan/2026:10:28:03 +0100] "POST /tp318/servlet/Authen HTTP/1.1" 200 613
 127.0.0.1 - - [08/Jan/2026:10:33:29 +0100] "POST /tp318/servlet/Authen HTTP/1.1" 200 613
 127.0.0.1 - - [08/Jan/2026:10:34:23 +0100] "POST /tp318/servlet/Authen HTTP/1.1" 200 613
+127.0.0.1 - - [08/Jan/2026:11:37:14 +0100] "GET /tpAuthentification/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [08/Jan/2026:11:37:14 +0100] "GET /tpAuthentification/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [08/Jan/2026:11:37:33 +0100] "POST /tp318/servlet/Authen HTTP/1.1" 200 613
+127.0.0.1 - - [08/Jan/2026:11:38:44 +0100] "POST /tp318/servlet/Authen HTTP/1.1" 200 567
+127.0.0.1 - - [08/Jan/2026:11:38:53 +0100] "POST /tp318/servlet/Authen HTTP/1.1" 200 567
+127.0.0.1 - - [08/Jan/2026:11:39:14 +0100] "POST /tp318/servlet/Authen HTTP/1.1" 200 567
+127.0.0.1 - - [08/Jan/2026:11:39:25 +0100] "POST /tp318/servlet/Authen HTTP/1.1" 302 -
+127.0.0.1 - - [08/Jan/2026:11:39:25 +0100] "GET /tp318/servlet/Menu HTTP/1.1" 200 881
+127.0.0.1 - - [08/Jan/2026:11:39:27 +0100] "GET /tp318/servlet/Maj HTTP/1.1" 200 1841
+127.0.0.1 - - [08/Jan/2026:11:39:29 +0100] "GET /tp318/servlet/Menu HTTP/1.1" 200 881
+127.0.0.1 - - [08/Jan/2026:11:39:31 +0100] "GET /tp318/servlet/Select HTTP/1.1" 200 758
