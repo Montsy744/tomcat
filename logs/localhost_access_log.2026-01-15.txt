@@ -1,0 +1,12 @@
+127.0.0.1 - - [15/Jan/2026:09:28:48 +0100] "GET /tpjsp/mapage.html HTTP/1.1" 404 695
+127.0.0.1 - - [15/Jan/2026:09:29:13 +0100] "GET /tpjsp/mapage.html HTTP/1.1" 404 695
+127.0.0.1 - - [15/Jan/2026:09:29:17 +0100] "GET /tpJsp/mapage.html HTTP/1.1" 200 277
+127.0.0.1 - - [15/Jan/2026:09:29:48 +0100] "GET /tpJsp/mapage.html HTTP/1.1" 200 275
+127.0.0.1 - - [15/Jan/2026:09:30:04 +0100] "GET /tpJsp/mapage.html HTTP/1.1" 304 -
+127.0.0.1 - - [15/Jan/2026:09:30:29 +0100] "GET /tpJsp/mapage.html HTTP/1.1" 404 695
+127.0.0.1 - - [15/Jan/2026:09:30:35 +0100] "GET /tpJsp/mapage.jsp HTTP/1.1" 200 283
+127.0.0.1 - - [15/Jan/2026:09:31:30 +0100] "GET /tpJsp/mapage.jsp HTTP/1.1" 200 207
+127.0.0.1 - - [15/Jan/2026:09:32:33 +0100] "GET /tpJsp/mapage.jsp HTTP/1.1" 200 309
+127.0.0.1 - - [15/Jan/2026:09:32:48 +0100] "GET /tpJsp/mapage.jsp HTTP/1.1" 200 313
+127.0.0.1 - - [15/Jan/2026:09:33:18 +0100] "GET /tpJsp/mapage.jsp HTTP/1.1" 200 314
+127.0.0.1 - - [15/Jan/2026:09:33:23 +0100] "GET /tpJsp/mapage.jsp HTTP/1.1" 200 314
