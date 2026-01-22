@@ -6223,3 +6223,8 @@ SELECT * FROM personne WHERE username = ('hugo') AND password = ('hugo')
 22-Jan-2026 13:53:04.248 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/infoetu/hugo.straseele.etu/tomcat/webapps/ctp] has finished in [70] ms
 22-Jan-2026 13:53:04.250 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 22-Jan-2026 13:53:04.256 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1239] milliseconds
+22-Jan-2026 15:20:57.242 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+22-Jan-2026 15:20:57.243 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+22-Jan-2026 15:20:57.243 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+22-Jan-2026 15:20:57.261 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+22-Jan-2026 15:20:57.266 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

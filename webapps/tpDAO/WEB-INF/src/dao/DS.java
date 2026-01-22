@@ -16,8 +16,8 @@ public class DS {
             String mdp = "moi";
             this.connection = DriverManager.getConnection(url, nom, mdp);
         } catch (Exception e) {
-            System.out.println("Erreur dans les données lors de la création");
-        }
+            System.out.println("Erreur dans les données lors de la création "+e);
+        } 
     }
 
 
