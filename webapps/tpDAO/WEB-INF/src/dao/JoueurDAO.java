@@ -30,4 +30,23 @@ public class JoueurDAO {
         }
         return null;
     }
+
+    public boolean creat (Joueur joueur) {
+        Connection conn = ds.getConnection();
+
+        try (PreparedStatement pstmt = conn.prepareStatement("insert into Joueur (jno,pseudo,email,pwd,elo) values (?,?,?,?,?);")) {
+            pstmt.setInt(1, joueur.getId());
+            pstmt.setString(2, joueur.getNom());
+            pstmt.setString(3, joueur.getEmail());
+            pstmt.setString(4, joueur.getPsw());
+            pstmt.setInt(5, joueur.getElo());
+
+            pstmt.executeUpdate();
+
+            return true;
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return false;
+    }
 }
