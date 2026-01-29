@@ -3,7 +3,8 @@
     "webapps/tpAuthentification/WEB-INF/classes",
     "webapps/ctp/WEB-INF/classes",
     "lib",
-    "webapps/tpDAO/WEB-INF/src"
+    "webapps/tpDAO/WEB-INF/src",
+    "webapps/tpMVC/WEB-INF/src"
   ],
   "java.project.referencedLibraries": [
     "/home/infoetu/hugo.straseele.etu/tomcat/lib/tomcat-i18n-es.jar",
