@@ -1,0 +1,8 @@
+{
+  "java.project.sourcePaths": ["WEB-INF/src"],
+  "java.project.referencedLibraries": [
+    "/home/infoetu/hugo.straseele.etu/tomcat/lib/postgresql-42.7.8.jar",
+    "/home/infoetu/hugo.straseele.etu/tomcat/lib/servlet-api.jar"
+  ],
+  "java.project.outputPath": "WEB-INF/classes"
+}

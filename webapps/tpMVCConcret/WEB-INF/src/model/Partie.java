@@ -1,18 +1,19 @@
 package model;
 
 import java.io.Serializable;
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class Partie implements Serializable {
     private int no;
     private int jno1;
     private int jno2;
-    private LocalDate date;
+    private Date date;
     private String statut;
     private int temps;
     private int gagnant;
 
-    public Partie(int no, int jno1, int jno2, LocalDate date, String statut, int temps, int gagnant) {
+    public Partie(int no, int jno1, int jno2, Date date, String statut, int temps, int gagnant) {
         this.no = no;
         this.jno1 = jno1;
         this.jno2 = jno2;
@@ -22,7 +23,7 @@ public class Partie implements Serializable {
         this.gagnant = gagnant;
     }
 
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
     public int getJno1() {
