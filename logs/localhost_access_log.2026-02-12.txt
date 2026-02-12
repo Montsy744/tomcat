@@ -1,0 +1,11 @@
+127.0.0.1 - - [12/Feb/2026:15:17:49 +0100] "GET / HTTP/1.1" 200 11237
+127.0.0.1 - - [12/Feb/2026:15:17:49 +0100] "GET /tomcat.svg HTTP/1.1" 200 67795
+127.0.0.1 - - [12/Feb/2026:15:17:49 +0100] "GET /favicon.ico HTTP/1.1" 200 8192
+127.0.0.1 - - [12/Feb/2026:15:17:49 +0100] "GET /asf-logo-wide.svg HTTP/1.1" 200 7089
+127.0.0.1 - - [12/Feb/2026:15:17:49 +0100] "GET /bg-nav.png HTTP/1.1" 200 1401
+127.0.0.1 - - [12/Feb/2026:15:18:00 +0100] "GET /pizzeria/ingredients HTTP/1.1" 404 698
+127.0.0.1 - - [12/Feb/2026:15:18:10 +0100] "GET /pizerria/ingredients HTTP/1.1" 404 698
+127.0.0.1 - - [12/Feb/2026:15:18:19 +0100] "GET /pizerria/ingredients HTTP/1.1" 404 698
+127.0.0.1 - - [12/Feb/2026:15:19:12 +0100] "GET /pizerria/ingredients HTTP/1.1" 200 74
+127.0.0.1 - - [12/Feb/2026:15:20:01 +0100] "GET /pizerria/ingredients HTTP/1.1" 200 74
+127.0.0.1 - - [12/Feb/2026:15:20:01 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
