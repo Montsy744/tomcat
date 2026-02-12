@@ -1,6 +1,9 @@
 package controleur;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -48,5 +51,15 @@ public class IngredientRestApi extends HttpServlet {
         out.print(objectMapper.writeValueAsString(ingredient));
         return;
 
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        InputStream inputStream = req.getInputStream();
+        String jsonstring = new String(inputStream.readAllBytes());
+        
+        Ingredient ingredient = objectMapper.readValue(jsonstring, Ingredient.class);
+        ingredientDao.save(ingredient);
     }
 }
