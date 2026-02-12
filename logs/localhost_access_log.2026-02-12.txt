@@ -104,3 +104,12 @@
 127.0.0.1 - - [12/Feb/2026:15:59:58 +0100] "GET /pizerria/ingredient/1 HTTP/1.1" 400 641
 127.0.0.1 - - [12/Feb/2026:15:59:59 +0100] "GET /pizerria/ingredient/1 HTTP/1.1" 200 34
 127.0.0.1 - - [12/Feb/2026:16:01:03 +0100] "GET /pizerria/ingredient/2 HTTP/1.1" 200 36
+127.0.0.1 - - [12/Feb/2026:16:13:50 +0100] "POST /pizzeria/ingredients HTTP/1.1" 404 776
+127.0.0.1 - - [12/Feb/2026:16:14:00 +0100] "POST /pizzeria/ingredients HTTP/1.1" 404 776
+127.0.0.1 - - [12/Feb/2026:16:14:33 +0100] "POST /pizerria/ingredients HTTP/1.1" 404 776
+127.0.0.1 - - [12/Feb/2026:16:15:15 +0100] "POST /pizerria/ingredient HTTP/1.1" 500 2740
+127.0.0.1 - - [12/Feb/2026:16:16:22 +0100] "POST /pizerria/ingredient HTTP/1.1" 500 2740
+127.0.0.1 - - [12/Feb/2026:16:21:11 +0100] "POST /pizerria/ingredient HTTP/1.1" 500 2773
+127.0.0.1 - - [12/Feb/2026:16:23:46 +0100] "GET /pizzeria/ingredients HTTP/1.1" 404 698
+0:0:0:0:0:0:0:1 - - [12/Feb/2026:16:24:43 +0100] "POST /pizerria/ingredient HTTP/1.1" 500 2789
+0:0:0:0:0:0:0:1 - - [12/Feb/2026:16:28:08 +0100] "POST /pizerria/ingredient HTTP/1.1" 200 -

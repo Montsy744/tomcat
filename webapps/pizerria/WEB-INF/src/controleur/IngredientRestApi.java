@@ -1,9 +1,7 @@
 package controleur;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -61,5 +59,6 @@ public class IngredientRestApi extends HttpServlet {
         
         Ingredient ingredient = objectMapper.readValue(jsonstring, Ingredient.class);
         ingredientDao.save(ingredient);
+        return;
     }
 }

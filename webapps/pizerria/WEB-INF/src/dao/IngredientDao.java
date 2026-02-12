@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import dto.Ingredient;
 
-public class IngredientDao {
+public class IngredientDao implements DAOIngredient {
 
     ArrayList<Ingredient> ingredients = new ArrayList<Ingredient>();
 
     public IngredientDao() {
-        this.ingredients.add(new Ingredient(1, "jambon", 0.0));
-        this.ingredients.add(new Ingredient(2, "tomates", 10.50));
+        this.ingredients.add(new Ingredient(1, "jambon", 0));
+        this.ingredients.add(new Ingredient(2, "tomates", 10));
     }
 
     public ArrayList<Ingredient> findAll() {
@@ -26,7 +26,8 @@ public class IngredientDao {
         return null;
     }
 
-    public void save(Ingredient i) {
+    public boolean save(Ingredient i) {
         this.ingredients.add(i);
+        return true;
     }
 }
