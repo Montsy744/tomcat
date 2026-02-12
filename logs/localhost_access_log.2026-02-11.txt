@@ -562,3 +562,15 @@
 127.0.0.1 - - [11/Feb/2026:15:49:35 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieRempli&id=2 HTTP/1.1" 200 1806
 127.0.0.1 - - [11/Feb/2026:15:49:36 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieVide HTTP/1.1" 500 1536
 127.0.0.1 - - [11/Feb/2026:15:49:39 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieVide HTTP/1.1" 200 1418
+127.0.0.1 - - [11/Feb/2026:16:10:47 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieRempli&id=2 HTTP/1.1" 200 1612
+127.0.0.1 - - [11/Feb/2026:16:10:49 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieRempli&id=3 HTTP/1.1" 200 1808
+127.0.0.1 - - [11/Feb/2026:16:10:50 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieRempli&id=3 HTTP/1.1" 200 2004
+127.0.0.1 - - [11/Feb/2026:16:10:52 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieRempli&id=1 HTTP/1.1" 200 2199
+127.0.0.1 - - [11/Feb/2026:16:10:53 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieRempli&id=1 HTTP/1.1" 200 2394
+127.0.0.1 - - [11/Feb/2026:16:10:55 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieVide HTTP/1.1" 500 1536
+127.0.0.1 - - [11/Feb/2026:16:11:00 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieVide HTTP/1.1" 500 1536
+127.0.0.1 - - [11/Feb/2026:16:12:08 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieVide HTTP/1.1" 200 1418
+127.0.0.1 - - [11/Feb/2026:16:12:10 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieRempli&id=1 HTTP/1.1" 200 1613
+127.0.0.1 - - [11/Feb/2026:16:12:10 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieRempli&id=2 HTTP/1.1" 200 1807
+127.0.0.1 - - [11/Feb/2026:16:12:11 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieRempli&id=3 HTTP/1.1" 200 2003
+127.0.0.1 - - [11/Feb/2026:16:12:16 +0100] "GET /ctpMVCHugoStraseele/Gestion?action=caddieVide HTTP/1.1" 200 1418

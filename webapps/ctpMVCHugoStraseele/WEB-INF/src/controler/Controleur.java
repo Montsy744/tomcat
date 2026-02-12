@@ -34,10 +34,8 @@ public class Controleur extends HttpServlet {
 
             case "caddieVide":
                 session.setAttribute("element", elmt);
-                int i = 0;
                 while(!Panier.isEmpty()) {
-                    Panier.remove(i);
-                    i++;
+                    Panier.remove(0);
                 };
                 break;
                 
