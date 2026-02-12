@@ -3,6 +3,7 @@ package dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import dto.Ingredient;
@@ -32,26 +33,24 @@ public class IngredientDAODatabase implements DAOIngredient {
         return allP;
     }
 
-    public Ingredient findById(int id) {
+    public Ingredient findById(int id) throws SQLException{
         Connection conn = ds.getConnection();
 
-        try (PreparedStatement pstmt = conn.prepareStatement("select * from Ingredients where id = ?")) {
-            pstmt.setInt(1, id);
-            ResultSet rs = pstmt.executeQuery();
-                if(rs.next()) {
-                    return new Ingredient(
+        PreparedStatement pstmt = conn.prepareStatement("select * from ingredients where id = ?");
+        pstmt.setInt(1, id);
+        ResultSet rs = pstmt.executeQuery();
+            if(rs.next()) {
+                return new Ingredient(
                         rs.getInt("id"),
-                        rs.getString("libelle"), 
+                        rs.getString("nom"), 
                         rs.getInt("prix")
                     );
                 }
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        
         return null;
     }
 
-    public boolean save(Ingredient i) {
+    public boolean save(Ingredient i) throws SQLException {
         Connection conn = ds.getConnection();
 
         if(this.findById(i.getId()) != null) {

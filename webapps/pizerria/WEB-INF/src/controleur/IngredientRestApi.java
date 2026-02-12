@@ -3,6 +3,9 @@ package controleur;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.sql.SQLException;
+
+import org.apache.catalina.connector.Response;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -11,14 +14,15 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import dao.IngredientDao;
+import dao.DS;
+import dao.IngredientDAODatabase;
 import dto.Ingredient;
 
 
 @WebServlet("/ingredient/*")
 public class IngredientRestApi extends HttpServlet {
 
-    IngredientDao ingredientDao = new IngredientDao();
+    IngredientDAODatabase ingredientDao = new IngredientDAODatabase(new DS());
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json;charset=UTF-8");
@@ -41,12 +45,16 @@ public class IngredientRestApi extends HttpServlet {
         }
 
         int id = Integer.parseInt(splits[1]);
-        Ingredient ingredient = ingredientDao.findById(id);
-        if (ingredient==null) {
-            response.sendError(HttpServletResponse.SC_NOT_FOUND);
-            return;
+        try {
+            Ingredient ingredient = ingredientDao.findById(id);
+            if (ingredient==null) {
+                response.sendError(HttpServletResponse.SC_NOT_FOUND);
+                return;
+            }
+            out.print(objectMapper.writeValueAsString(ingredient));
+        } catch (SQLException e) {
+            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
         }
-        out.print(objectMapper.writeValueAsString(ingredient));
         return;
 
     }
@@ -58,7 +66,15 @@ public class IngredientRestApi extends HttpServlet {
         String jsonstring = new String(inputStream.readAllBytes());
         
         Ingredient ingredient = objectMapper.readValue(jsonstring, Ingredient.class);
-        ingredientDao.save(ingredient);
+        try {
+            if(ingredientDao.save(ingredient) == false) {
+                resp.sendError(HttpServletResponse.SC_CONFLICT);
+                return;
+            }
+        } catch (SQLException e) {
+            resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
+        resp.sendError(HttpServletResponse.SC_CREATED);
         return;
     }
 }
