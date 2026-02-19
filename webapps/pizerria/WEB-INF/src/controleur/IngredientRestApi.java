@@ -5,8 +5,6 @@ import java.io.InputStream;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 
-import org.apache.catalina.connector.Response;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import jakarta.servlet.ServletException;
