@@ -1,7 +1,5 @@
 import java.io.PrintWriter;
 
-import com.fasterxml.jackson.databind.introspect.TypeResolutionContext.Basic;
-
 import java.io.IOException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -20,7 +18,7 @@ public class ControleurEtudiant3 extends HttpServlet {
         String token = req.getHeader("Authorization");
         if (token == null) {
             res.sendError(HttpServletResponse.SC_UNAUTHORIZED);
-        } else if (dao.verifTokenBasic(token.replace("Basic ", "").trim())) {
+        } else if (dao.verifTokenJWT(token.replace("Basic ", "").trim())) {
             res.setContentType("application/json;charset=UTF-8");
             PrintWriter out = res.getWriter();
             out.println(" { \"retour d'un GET\" : \"\" }");

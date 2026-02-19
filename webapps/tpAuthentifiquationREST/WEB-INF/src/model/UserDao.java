@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Base64;
 
+import io.jsonwebtoken.Claims;
+
 public class UserDao {
     private DS ds;
 
@@ -97,4 +99,13 @@ public class UserDao {
         
     }
 
+    public boolean verifTokenJWT(String token) {
+        try {
+            Claims claims = JwtManager.decodeJWT(token);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        } 
+    }
 }

@@ -1,3 +1,4 @@
+package model;
 // code pompé ici : https://developer.okta.com/blog/2018/10/31/jwts-with-java
 // lui-même inspiré par : https://www.baeldung.com/java-json-web-tokens-jjwt
 // et sinon la doc : https://github.com/jwtk/jjwt/blob/master/README.md

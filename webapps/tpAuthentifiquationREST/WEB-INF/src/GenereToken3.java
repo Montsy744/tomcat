@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.DS;
+import model.JwtManager;
 import model.UserDao;
 
 @WebServlet("/genereToken3")
